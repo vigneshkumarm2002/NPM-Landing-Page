@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend', sans-serif;
+overflow-x: hidden;
+}
+
+
+.svgMenu{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-image: url("./pattern.png");
+  position: relative;
+  z-index: 998;
+
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  bottom: 5px;
+  left: -10px;
+}
+
+.logo h4 {
+  font-size: 32px;
+  font-weight: 300;
+  height: fit-content;
+}
+
+.navText {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+nav li {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.navItems {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.heroSection {
+  padding: 0px 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.heroSection h1 {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.heroSection p {
+  text-align: center;
+  white-space: nowrap;
+  margin-left: 250px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  width: 100%;
+  padding: 20px 0;
+  background: black;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden !important;
+
+}
+
+
+/* 
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+} */
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+  overflow: hidden !important;
+
+}
+
+.logos-slide li {
+  list-style-type: none;
+  display: inline;
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+}
+
+.services {
+  background-color:
+    #EFEEEA;
+  width: 100%;
+  height: 100%;
+  padding: 100px 100px;
+}
+
+.serviceFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.serContainer {
+  width: 325px;
+  height: auto;
+
+}
+
+.serContainer img {
+  width: 325px;
+  height: 420px;
+  object-fit: cover;
+  margin-bottom: 20px;
+
+}
+
+.serContainer p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.serContainer h5 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.serviceArrange {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+  justify-content: space-around;
+}
+
+.second {
+  align-self: flex-end;
+}
+
+.reach {
+  width: 100%;
+  height: 500px;
+  background-color: #1E1E1E;
+  display: flex;
+}
+
+.reach img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.details{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cutting{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.detailsContainer {
+  
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
+  color:
+    #EFEEEA;
+
+}
+
+.detailsContainer h3 {
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+.detailsContainer p {
+  font-size: 2vw;
+  font-weight: 400;
+}
+
+.briefServices{
+  background-color: #EFEEEA;
+width: 100%;
+height: 100%;
+padding: 100px 150px;
+}
+.briefWholeContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.briefContainer{
+  width: 100%;
+  height:350px;
+  display: flex;
+  gap: 50px;
+}
+.briefContainer img{
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.briefContainer .briefContent{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.briefContent h5{
+font-size: 1.7vw;
+font-weight: 400;
+margin-bottom: 10px;
+}
+.briefContent h3{
+  font-size: 2.5vw;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.briefContent p{
+  font-size: 1.2vw;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.btn{
+  font-size: 18px;
+  background-color: #419af4;
+  outline: none;
+  border: none;
+  padding: 8px 20px;
+  font-family: 'Lexend', sans-serif;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  width: fit-content;
+}
+.faq{
+  background-color: #EFEEEA;
+  width: 100%;
+  height: 100%;
+  padding: 50px 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.faq-container {
+  width: 70%;
+  display: grid;
+  gap: 1em;
+}
+
+.faq-header {
+  padding: 1.2em 1em;
+  
+  font-weight: 600;
+  
+  background-color: white;
+  
+  user-select: none;
+  cursor: pointer;
+}
+
+.faq-content {
+  padding: 1em;
+}
+
+.web{
+  background-color: #EFEEEA;
+  width: 100%;
+  height: 100%;
+  padding:50px  150px 100px 150px;
+}
+
+footer{
+  background-color: #1E1E1E;
+  width: 100%;
+  height:100%;
+  padding:50px 150px;}
+
+.socialIcons svg{
+  width: 40px;
+  height: 40px;
+  fill:   #EFEEEA;;
+}
+.footerContent{
+  color:   #EFEEEA;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerContent p{
+  font-size: 18px;
+  font-weight: 300;
+}
+.touch{
+  color:   #EFEEEA;
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  height: fit-content;
+}
+.touch h3{
+  font-size: 30px;
+  font-weight: 300;
+  position: relative;
+  width:350px;
+
+}
+.touch h3:after {
+  content: '';
+
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+
+  border-width: 0 0 2px;
+  border-style: solid;
+}
+.footerAlign{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    padding: 0px 50px;
+  }
+  .services {
+    padding: 100px 30px;
+  }
+  
+.reach {
+  height: 400px;
+}
+
+
+.detailsContainer h3 {
+  font-size: 5vw;
+}
+
+.detailsContainer p {
+  font-size: 2.5vw;
+}
+.briefServices{
+padding: 100px 50px;
+}
+.briefContainer{
+
+  height:300px;
+gap: 30px;
+}
+.briefContent h5{
+  font-size: 2vw;
+  }
+  .briefContent h3{
+    font-size: 3.3vw;
+  }
+  .briefContent p{
+    font-size: 1.6vw;
+
+  }
+  .faq{
+    padding: 50px 50px;
+    gap: 40px;
+  }
+  
+  
+  .faq-container {
+    width: 100%;
+
+  }
+  .web{
+
+    padding:50px  50px 100px 50px;
+  }
+  
+  footer{
+    padding:50px 50px;}
+    .touch h3{
+      font-size: 25px;
+      width:250px;
+    
+    }
+    .footerAlign{
+      justify-content: space-between;
+    }
+
+}
+@media only screen and (max-width: 786px) {
+  .svgMenu{
+    display: block;
+  }
+  .hidden{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  .navItems {
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #EFEEEA;
+  gap: 20px;
+  padding: 50px 50px 50px 50px;
+  text-align: center;
+  z-index: 988;
+  border-radius: 8px;
+  display: none;
+  }
+  header {
+    height: 600px;
+  }
+  
+  
+  .navText {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+ 
+  .heroSection {
+    padding: 0px 30px;
+    gap: 20px;
+  }
+  
+  .heroSection h1 {
+    font-size: 55px;
+  }
+  .logos {
+    padding: 10px 0;
+  }
+  .logos-slide li {
+    font-size: 22px;
+  }
+
+  .services {
+    padding: 50px 30px;
+  }
+  
+.serContainer {
+  width: 200px;
+  height: auto;
+
+}
+
+.serContainer img {
+  width: 200px;
+  height: 300px;
+
+}
+
+.serContainer p {
+  font-size: 16px;
+}
+
+.serContainer h5 {
+  font-size: 20px;
+}
+
+.serviceArrange {
+  height: 600px;
+}
+.reach {
+  height: 300px;
+}
+
+
+.detailsContainer h3 {
+  font-size: 4vw;
+}
+
+.detailsContainer p {
+  font-size: 2.5vw;
+}
+
+.briefServices{
+padding: 80px 50px;
+}
+.briefWholeContainer{
+  width: 100%;
+  gap: 50px;
+}
+.briefContainer{
+  width: 100%;
+  height:500px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+.reverse{
+flex-direction: column;
+}
+.briefContainer img{
+  width: 100%;
+  height: 50%;
+}
+.briefContainer .briefContent{
+  width:100%;
+ 
+  gap: 10px;
+}
+.briefContent h5{
+font-size: 20px;
+font-weight: 400;
+margin-bottom: 10px;
+}
+.briefContent h3{
+  font-size: 30px;
+  font-weight: 500;
+}
+.briefContent p{
+  font-size: 18px;
+  line-height: 1.2;
+}
+.btn{
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.faq{
+  padding: 0px 50px;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+
+
+.faq-container {
+  width: 100%;
+}
+
+
+.web{
+  padding:50px  50px 100px 50px;
+}
+
+footer{
+  padding:50px 50px;}
+
+
+.footerContent{
+  align-items: center;
+  gap: 10px;
+}
+
+.touch{
+  gap: 10px;
+}
+.touch h3{
+  font-size: 20px;
+ width:250px;
+}
+.footerAlign{
+  flex-direction: column;
+  gap: 50px;
+}
+
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .heroSection {
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  header {
+    width: 100%;
+    height: 600px;
+  }
+  .heroSection p {
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 0;
+  }
+  nav {
+  
+    padding: 0px 30px;
+    padding-left: 40px;
+
+  }
+  
+  .heroSection h1 {
+    font-size: 45px;
+  }
+
+  .services {
+    padding: 50px 30px;
+  }
+  
+.serContainer {
+  width: 50%;
+  height: auto;
+
+
+}
+.serContainer img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.serContainer p {
+  font-size: 14px;
+}
+
+.serContainer h5 {
+  font-size: 18px;
+}
+
+.serviceArrange {
+  height: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+
+.reach {
+  width: 100%;
+  height: 600px;
+  flex-direction: column;
+}
+
+.reach img {
+  width: 100%;
+  height: 50%;
+}
+.details{
+  width: 100%;
+  height: 50%;
+}
+
+.detailsContainer h3 {
+  font-size: 30px;
+}
+
+.detailsContainer p {
+  font-size: 18px;
+}
+
+
+
+.briefServices{
+padding: 50px 30px;
+}
+
+.briefContent h5{
+font-size: 18px;
+margin-bottom: 8px;
+}
+.briefContent h3{
+  font-size: 22px;
+}
+.briefContent p{
+  font-size: 14px;
+}
+.btn{
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.faq{
+  padding: 0px 30px;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+.faq-header {
+font-size: 14px;
+}
+.faq h1{
+  font-size: 18px;
+}
+.faq-content {
+  font-size: 12px;
+}
+
+
+.web{
+  padding:10px  30px 60px 30px;
+}
+
+footer{
+  padding:50px 30px;}
+
+
+.touch{
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.touch h3{
+  font-size: 18px;
+ width:200px;
+}
+
+.socialIcons svg{
+  width: 30px;
+  height: 30px;
+}
+.footerContent{
+  gap: 10px;
+}
+.footerContent p{
+  font-size: 16px;
+}
+.logo img {
+  position: absolute;
+  bottom: 3px;
+  left: -20px;
+}
+
+.logo h4 {
+  font-size: 26px;
+}
+.navItems {
+  top: 60px;
+  right: 30px;
+  gap: 20px;
+  padding: 30px 30px 30px 30px;
+  border-radius: 6px;
+
+  }
+}
